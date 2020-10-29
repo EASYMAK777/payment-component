@@ -8,15 +8,17 @@ function App() {
 
   return (
     <div className="App">
-      
+      {/* If checkout button is clicked it will render the paypal button on user's screen */}
       { checkout ? (
         <Paypal />
 
       ) : (
-
+        // Creating button
       <button 
+        // Adding clickability to button
         onClick={()=>{
-          setCheckout(true);
+          //
+          setCheckout(true);    
           }}
           >
           Checkout
