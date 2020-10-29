@@ -9,16 +9,19 @@ function App() {
   return (
     <div className="App">
       
-      {checkout ? }
+      { checkout ? (
+        <Paypal />
+
+      ) : (
 
       <button 
         onClick={()=>{
           setCheckout(true);
           }}
           >
-            Checkout
-          </button>
-
+          Checkout
+        </button>
+          )}
     </div>
   );
 }
