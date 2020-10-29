@@ -4,11 +4,20 @@ import React, { useState } from 'react';
 
 function App() {
 
-  
+  const [checkout, setCheckout] = useState(false)
 
   return (
     <div className="App">
-      <button>Checkout</button>
+      
+      {checkout ? }
+
+      <button 
+        onClick={()=>{
+          setCheckout(true);
+          }}
+          >
+            Checkout
+          </button>
 
     </div>
   );
