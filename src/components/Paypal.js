@@ -7,7 +7,7 @@ export default function Paypal() {
     useEffect(() => {
         window.paypal.Buttons({
             
-        }) 
+        }).render(paypal.current) 
     }, [])
     
     return(
